@@ -4,10 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-var loginName = "Malligarjunan";
-let element = <h1>Welcome {loginName} !!!</h1>;
+const loginname = "Malligarjunan";
+const element = <h1 class="headerclass">Welcome, {loginname} !!!</h1>;
 
-ReactDOM.render(element,document.getElementById('root'));
+ReactDOM.render(element,document.getElementById('headermenu'));
+
+const elementleftTreeItems = <h2 class="leftbarclass"> This is Left Bar </h2>
+ReactDOM.render(elementleftTreeItems,document.getElementById('leftbar'));
+
+const elemenfootertext = <h1 class="footerclass"> Copyright @2020 </h1>;
+
+ReactDOM.render(elemenfootertext,document.getElementById('footermenu'));
 
 
 /*ReactDOM.render(
